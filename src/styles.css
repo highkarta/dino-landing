@@ -1,52 +1,123 @@
-*{
+* {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav, header, footer{
-  background-color: #1F2937;
+/* TYPE SELECTORs */
+nav,
+header,
+footer {
+  background-color: #1f2937;
   color: white;
 }
 
-nav{
-  display: flex;
-  padding: 20px;
-}
-
-#logo{
-  width: 60%;
-}
-
-#nav-section{
-  display: flex;
-  gap: 50px;
-}
-
-h1{
+h1 {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
 }
 
-header{
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #1f2937;
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  padding: 20px;
+}  
+
+header {
   padding: 50px;
   display: flex;
   justify-content: space-around;
+}  
+
+section {
+  height: 400px;
 }
 
-button{
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+button {
   background-color: #3882f6;
   border: none;
   padding: 5px 20px;
   border-radius: 10px;
-}
-section{
-  height: 300px;
+}  
+
+img {
+  width: 200px;
+  border-radius: 15px;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
 }
 
-#cta{
+/* HEADER SECTION */
+#logo {
+  width: 60%;
+}
+
+#nav-section {
+  display: flex;
+  gap: 50px;
+}
+
+/* CARDS SECTION */
+#cards-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#hero-img {
+  width: 200px;
+}
+
+.cards {
+  background-color: #1f2937;
+  width: 200px;
+  height: 200px;
+  /* flex: auto; */
+  gap: 10;
+}
+
+#championships-section {
+  text-align: center;
+  padding: 20px;
+}
+
+/* QUOTE SECTION */
+#quote-section {
+  background-color: #e5e7eb;
+  text-align: center;
+  padding: 100px;
+}
+
+.quote-content {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.quote-attribute {
+  text-align: right;
+  margin-right: 125px;
+  margin-top: 20px;
+}
+
+/* CTA SECTION */
+#cta {
   background-color: #3882f6;
   width: 75%;
   margin: 50px auto;
@@ -55,24 +126,6 @@ section{
   display: flex;
 }
 
-#cta button{
+#cta button {
   border: 2px white solid;
-}
-
-
-footer{
-  padding: 20px;
-  text-align: center;
-}
-
-#quote-section{
-  background-color: #E5e7eb;
-  text-align: center;
-  padding: 100px;
-}
-
-h3{
-  font-size: 36px;
-  font-weight: 300;
-  color: #1F2937;
 }
