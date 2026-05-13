@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -28,11 +28,18 @@ h3 {
   font-weight: 300;
   color: #1f2937;
   text-align: left;
+  font-style: italic;
+}
+
+h4{
+  font-size: 24px;
+  color: #EEEEEE;
 }
 
 nav {
   display: flex;
   padding: 20px;
+  justify-content: space-around;
 }  
 
 header {
@@ -53,9 +60,17 @@ footer {
 button {
   background-color: #3882f6;
   border: none;
-  padding: 5px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
-}  
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button:hover{
+  background-color: skyblue;
+}
 
 img {
   width: 200px;
@@ -63,6 +78,10 @@ img {
   height: 250px;
   object-fit: cover;
   object-position: top;
+}
+
+figcaption{
+  margin-top: 15px;
 }
 
 /* HEADER SECTION */
@@ -75,18 +94,24 @@ img {
   gap: 50px;
 }
 
+.hero-desc{
+  font-size: 18px;
+  margin: 30px 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#hero-img{
+  width: 300px;
+}
+
 /* CARDS SECTION */
 #cards-section {
   display: flex;
   justify-content: space-evenly;
 }
 
-#hero-img {
-  width: 200px;
-}
-
 .cards {
-  background-color: #1f2937;
+  /* background-color: #1f2937; */
   width: 200px;
   height: 200px;
   /* flex: auto; */
@@ -103,27 +128,43 @@ img {
   background-color: #e5e7eb;
   text-align: center;
   padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*
 .quote-content {
   width: 40%;
   margin: 0 auto;
 }
+*/
 
 .quote-attribute {
   text-align: right;
   margin-right: 125px;
   margin-top: 20px;
+  font-weight: 600;
 }
 
 /* CTA SECTION */
 #cta {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cta-content{
   background-color: #3882f6;
-  width: 75%;
-  margin: 50px auto;
+  width: 60%;
+  height: 60%;
   border-radius: 20px;
   padding: 50px;
   display: flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #cta button {
